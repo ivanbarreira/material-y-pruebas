@@ -8,11 +8,12 @@ int main()
     int x=15;
     int y=16;
     int z=14;
+    int Max;
 
 
-    printf("numMax"),obtenerMaximos(x, y, z);
+    Max=obtenerMaximos(x, y, z);
 
-
+    printf("%d\n",Max);
 
     return 0;
 }
@@ -25,7 +26,7 @@ int obtenerMaximos(int x, int y, int z)
     {
         numMax=x;
     }
-        else if(y>x && y>z)
+        else if(y>=x && y>z)
         {
             numMax=y;
         }
@@ -33,6 +34,6 @@ int obtenerMaximos(int x, int y, int z)
         {
             numMax=z;
         }
-    }
+
     return numMax;
 }
